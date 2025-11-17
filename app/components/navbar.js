@@ -33,6 +33,11 @@ export default function Navbar() {
         <nav>
           <ul className="flex items-center gap-6">
             <li>
+              <Link href="/about" className={`px-4 py-2 rounded-md font-medium ${isActive('/about') ? 'bg-black text-white' : 'hover:bg-gray-100'}`}>
+                About
+              </Link>
+            </li>
+            <li>
               <Link href="/projects" className={`px-3 py-2 rounded-md ${isActive('/projects') ? 'bg-black text-white' : 'hover:bg-gray-100'}`}>
                 Projects
               </Link>
@@ -40,11 +45,6 @@ export default function Navbar() {
             <li>
               <Link href="/experience" className={`px-3 py-2 rounded-md ${isActive('/experience') ? 'bg-black text-white' : 'hover:bg-gray-100'}`}>
                 Experience
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className={`px-4 py-2 rounded-md font-medium ${isActive('/about') ? 'bg-black text-white' : 'hover:bg-gray-100'}`}>
-                About
               </Link>
             </li>
           </ul>

@@ -79,7 +79,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">A Little About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            I'm a problem-solver with professional experience from two intensive summers at Jane Street, where I built complex algorithms and a real-time trading bot. I'm also dedicated to building community, which led me to revive Northwestern's chapter of the Association for Women in Mathematics.
+            Coming Soon...
           </p>
           <Link href="/about" className="bg-black text-white font-medium py-3 px-6 rounded-md hover:bg-gray-800 transition-colors">
             More About Me
