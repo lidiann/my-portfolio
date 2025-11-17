@@ -8,10 +8,10 @@ export default function AboutPage() {
 
       <div className="flex flex-col gap-6">
           <h1 className="text-5xl font-bold">About</h1>
-          <h2 className="text-2xl text-purple-text">
+          <h2 className="text-2xl text-gray-600">
             A brief overview of my work, skills, and experience.
           </h2>
-          <div className="text-purple-text leading-relaxed space-y-4">
+          <div className="text-gray-700 leading-relaxed space-y-4">
             <p>
               My name is <strong>Lidiann Spears</strong>, and I'm a student at <strong>Northwestern University</strong> pursuing a <strong>B.A. in Computer Science & Mathematics</strong>, with an expected graduation in <strong>June 2028</strong>.
             </p>
