@@ -90,15 +90,15 @@ export default function Home() {
           I'm always looking for new challenges and opportunities. Feel free to reach out!
         </p>
         <div className="flex justify-center gap-6">
-          <a href="mailto:Ispearsguerra@gmail.com" className="text-lg font-medium text-black hover:underline">
+          <Link href="mailto:lspearsguerra@gmail.com" className="text-lg font-medium text-black hover:underline">
             Email
-          </a>
-          <a href="https.linkedin.com/in/lidiannspearsguerra/" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-black hover:underline">
+          </Link>
+          <Link href="https://linkedin.com/in/lidiannspearsguerra" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-black hover:underline">
             LinkedIn
-          </a>
-          <a href="https.github.com/lidiann" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-black hover:underline">
+          </Link>
+          <Link href="https://github.com/lidiann/" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-black hover:underline">
             GitHub
-          </a>
+          </Link>
         </div>
       </section>
     </div>
