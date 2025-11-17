@@ -19,6 +19,19 @@ export default function Navbar() {
           <p className="text-sm text-gray-600">Student @ NU</p>
         </div>
         
+          {/* Social Icons */}
+          <div className="flex flex-center  gap-4 text-gray-600">
+            <a href="https://linkedin.com/in/lidiannspearsguerra" target="_blank" rel="noopener noreferrer" className="hover:text-black">
+              <FaLinkedin size={20} />
+            </a>
+            <a href="https://github.com/lidiann" target="_blank" rel="noopener noreferrer" className="hover:text-black">
+              <FaGithub size={20} />
+            </a>
+            <a href="mailto:lspearsguerra@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-black">
+              <FaEnvelope size={20} />
+            </a>
+          </div>
+
         {/* Right Side: Nav and Socials */}
         <div className="flex items-center gap-8">
           
@@ -42,19 +55,6 @@ export default function Navbar() {
               </li>
             </ul>
           </nav>
-
-          {/* Social Icons */}
-          <div className="flex gap-4 text-gray-600">
-            <a href="https://linkedin.com/in/lidiannspearsguerra" target="_blank" rel="noopener noreferrer" className="hover:text-black">
-              <FaLinkedin size={20} />
-            </a>
-            <a href="https://github.com/lidiann" target="_blank" rel="noopener noreferrer" className="hover:text-black">
-              <FaGithub size={20} />
-            </a>
-            <a href="mailto:lspearsguerra@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-black">
-              <FaEnvelope size={20} />
-            </a>
-          </div>
         </div>
 
       </div>
