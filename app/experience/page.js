@@ -9,7 +9,7 @@ export default function Experience() {
       <h1 className="text-5xl font-bold mb-16">Experiences</h1>
 
       {/* --- WORK EXPERIENCE SECTION --- */}
-      <h2 className="text-3xl font-bold text-gray-800 mb-8 border-b-2 border-gray-200 pb-2">
+      <h2 className="text-3xl font-bold text-purple-dark mb-8 border-b-2 border-purple-light pb-2">
         Technical Experience
       </h2>
 
@@ -20,22 +20,22 @@ export default function Experience() {
         <div className="border border-gray-200 rounded-lg shadow-lg p-6 flex flex-col justify-between hover:shadow-xl transition-shadow">
           <div>
             <div className="flex items-center gap-4 mb-4">
-              <div className="flex-shrink-0 w-16 h-16 bg-white border border-gray-200 rounded-lg flex items-center justify-center">
+              <div className="flex-shrink-0 w-16 h-16 bg-purple-light border border-purple-light rounded-lg flex items-center justify-center">
                 <Image src="/janestreet.png" alt="Jane Street Logo" width={50} height={50} className="object-contain"/>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Software Engineering Fellow</h3>
-                <p className="text-md font-medium text-gray-800">Jane Street</p>
-                <p className="text-sm text-gray-600">June 2025 - Aug 2025 | New York, NY</p>
+                <p className="text-md font-medium text-purple-dark">Jane Street</p>
+                <p className="text-sm text-purple-text">June 2025 - Aug 2025 | New York, NY</p>
               </div>
             </div>
-            <p className="text-gray-700 space-y-2 mb-6">
+            <p className="text-purple-text space-y-2 mb-6">
               Coming soon...
             </p>
           </div>
           {/* Links section */}
           <div className="flex gap-4 text-sm">
-            <Link href="https://www.janestreet.com/join-jane-street/programs-and-events/jsip/" className="flex items-center gap-2 text-black font-medium hover:underline">
+            <Link href="https://www.janestreet.com/join-jane-street/programs-and-events/jsip/" className="flex items-center gap-2 text-purple-dark font-medium hover:underline">
               <FaExternalLinkAlt size={16} /> Learn More
             </Link>
           </div>

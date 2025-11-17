@@ -65,12 +65,10 @@ export default function Projects() {
   return (
     <div className="max-w-7xl mx-auto py-16 px-8">
       
-      {/* 4. FEATURED PROJECT SECTION */}
-      <section className="border border-gray-200 rounded-lg shadow-lg p-8 mb-20 hover:shadow-xl transition-shadow">
+      <section className="border border-purple-light bg-beige rounded-lg shadow-lg p-8 mb-20 hover:shadow-xl transition-shadow">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           
-          {/* Column 1: Image */}
-          <div className="bg-gray-100 rounded-lg flex items-center justify-center">
+          <div className="bg-purple-light rounded-lg flex items-center justify-center">
             <Image 
               src={selectedProject.imageUrl} 
               alt={selectedProject.name}
@@ -80,45 +78,40 @@ export default function Projects() {
             />
           </div>
 
-          {/* Column 2: Text Content */}
           <div>
             <h1 className="text-4xl font-bold mb-2">{selectedProject.name}</h1>
-            
-            {/* Combined Date and WhereMade into one line with a separator */}
-            <p className="text-sm text-gray-600 mb-6">
-              {selectedProject.whereMade}
-              <span className="mx-2">|</span>
+            <p className="text-sm text-purple-text mb-6">
               {selectedProject.date}
+              <span className="mx-2">|</span>
+              {selectedProject.whereMade}
             </p>
             
             <h3 className="text-lg font-semibold mb-2">About this Project</h3>
-            <p className="text-gray-700 mb-6">{selectedProject.shortDescription}</p>
+            <p className="text-purple-text mb-6">{selectedProject.shortDescription}</p>
 
             <h3 className="text-lg font-semibold mb-2">Features</h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+            <ul className="list-disc list-inside text-purple-text space-y-2 mb-6">
               {selectedProject.details.map((detail, index) => (
                 <li key={index}>{detail}</li>
               ))}
             </ul>
             
-            {/* Tools Used */}
             <div className="flex flex-wrap gap-2 mb-6">
               {selectedProject.tools.map((tool, index) => (
-                 <span key={index} className="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full">
+                 <span key={index} className="bg-purple-light text-purple-dark text-xs font-medium px-3 py-1 rounded-full">
                   {tool}
                  </span>
               ))}
             </div>
 
-            {/* Links */}
             <div className="flex gap-4">
               {selectedProject.githubLink && (
-                <Link href={selectedProject.githubLink} className="flex items-center gap-2 text-black font-medium hover:underline">
+                <Link href={selectedProject.githubLink} className="flex items-center gap-2 text-purple-dark font-medium hover:underline">
                   <FaGithub size={20} /> GitHub
                 </Link>
               )}
               {selectedProject.liveLink && (
-                <Link href={selectedProject.liveLink} className="flex items-center gap-2 text-black font-medium hover:underline">
+                <Link href={selectedProject.liveLink} className="flex items-center gap-2 text-purple-dark font-medium hover:underline">
                   <FaExternalLinkAlt size={18} /> Live Demo
                 </Link>
               )}
@@ -127,7 +120,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* 5. "OTHER PROJECTS" SECTION */}
       <section>
         <h2 className="text-3xl font-bold mb-8">Other Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -136,7 +128,7 @@ export default function Projects() {
             <div
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="border border-gray-200 rounded-lg shadow-sm overflow-hidden 
+              className="border border-purple-light bg-beige rounded-lg shadow-sm overflow-hidden 
                          cursor-pointer hover:shadow-xl hover:scale-105 transition-all"
             >
               <Image
@@ -148,8 +140,8 @@ export default function Projects() {
               />
               <div className="p-4">
                 <h3 className="font-bold text-lg">{project.name}</h3>
-                <p className="text-sm text-gray-600">{project.date}</p>
-                <p className="text-sm text-gray-700 mt-2">{project.shortDescription}</p>
+                <p className="text-sm text-purple-text">{project.date}</p>
+                <p className="text-sm text-purple-text mt-2">{project.shortDescription}</p>
               </div>
             </div>
           ))}
